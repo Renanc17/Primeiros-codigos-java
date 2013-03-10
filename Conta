@@ -1,0 +1,27 @@
+class Conta{
+  private int numero;
+	private String nome;
+	private double saldo;
+	private double limite;
+	
+	void deposita(double quantidade){
+	this.saldo += quantidade;
+	}
+	
+	void saca(double quantidade){
+	this.saldo -= quantidade;
+	}
+	
+	String getNome(){
+	return this.nome;
+	}
+	
+	String setNome(String nome){
+	this.nome = nome;
+	return nome;
+	}
+	
+	double getSaldo(){
+	return this.saldo;
+	}
+}
