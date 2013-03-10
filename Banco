@@ -1,0 +1,24 @@
+class Banco {
+   public static void main(String[] args) {
+   Conta minhaconta;
+   minhaconta=new Conta();
+   minhaconta.setNome("Renan");
+   minhaconta.deposita(1000);
+   
+   System.out.println("Dono da conta: " + minhaconta.getNome());
+   System.out.println("Saldo: " + minhaconta.getSaldo());
+
+   System.out.println("Foi efetuado um saque de 200$");
+   minhaconta.saca(200);
+   System.out.println("Saldo: " + minhaconta.getSaldo());
+   
+   System.out.println("Foi depositado 750$");
+   minhaconta.deposita(750);
+   System.out.println("Saldo: " + minhaconta.getSaldo());
+   
+   System.out.println("Um safado hackiou sua conta");
+   minhaconta.setNome("Julius");
+   System.out.println("Dono da conta: " + minhaconta.getNome());
+   
+   }
+ }
